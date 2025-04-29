@@ -20,9 +20,9 @@ printStar(10, '🤘🏾');
 function printGugudan(dan = 2) {
   let result = '';
   for (let i = 1; i <= 9; i++) {
-    document.write (`<p>${dan} * ${i} = ${dan*i}</p>`)
+    document.write(`<p>${dan} * ${i} = ${dan*i}</p>`)
   }
   // document 영역에 출력하는함수.
-  
+
 }
 printGugudan(9);

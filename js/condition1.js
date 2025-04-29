@@ -7,7 +7,7 @@ isTrue = 3 < 5;
 isTrue = num1 < 5;
 isTrue = --num1 < 5;
 isTrue = --num1 <= 4 && num2++ == 10;
-isTrue = 2;  // true / false => truthy / falsy (0, "", null, underfied, NaN)
+isTrue = 2; // true / false => truthy / falsy (0, "", null, underfied, NaN)
 console.log(num1, num2);
 
 if (isTrue) {

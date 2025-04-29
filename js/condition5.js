@@ -18,15 +18,24 @@
 
 
 // 30 ~ 100 임의의 값.
-let result = 30 + Math.floor(Math.random() * 71); 
+let result = 30 + Math.floor(Math.random() * 71);
 console.log(result)
-result =Math.floor(result/10); // 95/10 => 9.5
+result = Math.floor(result / 10); // 95/10 => 9.5
 console.log(result)
-switch(result) {
-  case 10 :
-  case 9 : console.log("A");break;
-  case 8 : console.log("B");break;
-  case 7 : console.log("C");break;
-  case 6 : console.log("D");break;
-  default: console.log("F");
+switch (result) {
+  case 10:
+  case 9:
+    console.log("A");
+    break;
+  case 8:
+    console.log("B");
+    break;
+  case 7:
+    console.log("C");
+    break;
+  case 6:
+    console.log("D");
+    break;
+  default:
+    console.log("F");
 }

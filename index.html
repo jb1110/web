@@ -7,7 +7,7 @@
   <title>자바스크립트</title>
   <style>
     #userValue {
-      color: #fc00fcda;
+      color: #1a0d1ada;
     }
 
   </style>
@@ -18,23 +18,23 @@
 <body>
   <!-- HTML 주석문. -->
   <d1v id="show">
-    <input type="text" id="userValue" value="김민규">
-    <p>
+    <input type="text" id="userValue">
+    <button id="searchBtn" class="btn btn-primary">조회</button>
+    <select id="selectGender" class="form-control">
+      <option value="All">전체</option>
+      <option value="Male">남자</option>
+      <option value="Female">여자</option>
+      <option value="Genderqueer">젠더퀴어</option>
+      <option value="Genderfluid">젠더플루이드</option>
+      <option value="Non-binary">논바이너리</option>
+    </select>
+    <!-- <p>
       <input type="text" id="num1" value="30"> +
       <input type="text" id="num2" value="17"> =
       <input type="text" id="result">
-    </p>
+    </p> -->
   </d1v>
-  <table class="table">
-    <tr>
-      <td>홍길동</td>
-    </tr>
-    <tr>
-      <td>김길동</td>
-    </tr>
-  </table>
-  
-  <script src="js/function3exe.js"></script>
+  <script src="js/jsonData.js"></script>
+  <script src="js/function8.js"></script>
 </body>
-
 </html>
