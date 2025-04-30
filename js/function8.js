@@ -44,9 +44,11 @@ let data = JSON.parse(json); // JSON 문자열을 객체로 변환
 // button<삭제> 템플릿
 let btnTemplate = "<button class='btn btn-danger' onclick='deleteTr(event)'>삭제</button>";
 function deleteTr(event) {
-  button = event.target;
-  tr = button.closest("tr");
-  if (tr) tr.remove();
+  console.log(event)
+  event.target.parentElement.parentElement.remove();
+  // button = event.target;
+  // tr = button.closest("tr");
+  // if (tr) tr.remove();
 }
 
 // 테이블을 만들기 위해 HTML 문자열 생성
@@ -76,9 +78,12 @@ function makeTr(emp = {}) {
   str += "</tr>";
   return str;
 }
+
+// 버튼클릭
 document.querySelector('button#searchBtn')
-  .addEventListener('click', function () {
-    // 입력값
+.addEventListener('click', function () {
+  // 입력값
+  console.log(this);
     let searchValue = document.querySelector('#userValue').value;
     let list = "";
     for (let emp of data) {
@@ -88,8 +93,8 @@ document.querySelector('button#searchBtn')
     }
     document.querySelector('table.table>tbody').innerHTML = list;
   });
-
-//2.select "change";
+  
+  //2.select "change";
 document.querySelector('select#selectGender')
   .addEventListener('change', function () {
     let searchValue = document.querySelector('#selectGender').value;
